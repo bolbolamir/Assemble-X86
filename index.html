@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="main.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="t.webp" type="image/x-icon">
+        <link rel="stylesheet" href="style.css" />
+        <title>Assembler</title>
+    </head>
+    <body>
+        <article>
+            <form>
+                <div class="v">
+                    <label for="op">Operation:</label>
+                    <select name="operation" id="op">
+                        <option value="add">add</option>
+                        <option value="sub">sub</option>
+                        <option value="or">or</option>
+                        <option value="and">and</option>
+                    </select>
+                    <label for="f_op"><p>First Operand:</p></label>
+                    <select name="first_operand" id="f_op">
+                        <option value="al">al</option>
+                        <option value="bl">bl</option>
+                        <option value="cl">cl</option>
+                        <option value="dl">dl</option>
+                        <option value="ah">ah</option>
+                        <option value="bh">bh</option>
+                        <option value="ch">ch</option>
+                        <option value="dh">dh</option>
+                        <option value="ax">ax</option>
+                        <option value="bx">bx</option>
+                        <option value="cx">cx</option>
+                        <option value="dx">dx</option>
+                        <option value="si">si</option>
+                        <option value="di">di</option>
+                        <option value="sp">sp</option>
+                        <option value="bp">bp</option>
+                        <option value="eax">eax</option>
+                        <option value="ebx">ebx</option>
+                        <option value="ecx">ecx</option>
+                        <option value="edx">edx</option>
+                        <option value="esi">esi</option>
+                        <option value="edi">edi</option>
+                        <option value="esp">esp</option>
+                        <option value="ebp">ebp</option>
+                    </select>
+
+                    <label for="s_op"><p>Second Operand:</p></label>
+                    <select name="second_operand" id="s_op">
+                        <option value="al">al</option>
+                        <option value="bl">bl</option>
+                        <option value="cl">cl</option>
+                        <option value="dl">dl</option>
+                        <option value="ah">ah</option>
+                        <option value="bh">bh</option>
+                        <option value="ch">ch</option>
+                        <option value="dh">dh</option>
+                        <option value="ax">ax</option>
+                        <option value="bx">bx</option>
+                        <option value="cx">cx</option>
+                        <option value="dx">dx</option>
+                        <option value="si">si</option>
+                        <option value="di">di</option>
+                        <option value="sp">sp</option>
+                        <option value="bp">bp</option>
+                        <option value="eax">eax</option>
+                        <option value="ebx">ebx</option>
+                        <option value="ecx">ecx</option>
+                        <option value="edx">edx</option>
+                        <option value="esi">esi</option>
+                        <option value="edi">edi</option>
+                        <option value="esp">esp</option>
+                        <option value="ebp">ebp</option>
+                    </select>
+                </div>
+                <button class="pushable" onclick="deploy()" type="button">
+                    <span class="front"> Assemble! </span>
+                </button>
+                <input id="result" readonly placeholder="result" />
+            </form>
+        </article>
+        <img src="t.webp" alt="" id="picture" />
+    </body>
+</html>
